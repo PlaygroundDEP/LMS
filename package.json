@@ -4,5 +4,11 @@
   "description": "LMS Front End",
   "keywords": [],
   "author": "BGT Nuwangi <thakshilanuwangi123@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "admin-lte": "^3.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.4.1"
+  }
 }
