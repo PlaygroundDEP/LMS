@@ -5,7 +5,7 @@
   "keywords": [],
   "author": "BGT Nuwangi <thakshilanuwangi123@gmail.com>",
   "license": "MIT",
-  "source": "src/index.html",
+  "source": ["src/index.html", "src/register-students.html"],
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
