@@ -27,8 +27,7 @@
   <!-- AdminLTE App -->
   <script type="module" defer src="../node_modules/admin-lte/dist/js/adminlte.js"></script>
 
-
-
+  <script defer src="ts/register-students.ts"></script>
 </head>
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
@@ -135,16 +134,16 @@
           <div class="col">
             <form>
             <div class="form-group ml-1">
-              <label class="col-form-label" for="txtStudentName">Student Name</label>
-              <input type="text" class="form-control is-valid" id="txtStudentName" placeholder="Enter Student Name">
+              <label class="col-form-label" for="txt-student-name">Student Name</label>
+              <input type="text" class="form-control" id="txt-student-name" placeholder="Enter Student Name">
             </div>
             <div class="form-group">
-              <label class="col-form-label" for="txtStudentNIC">Student NIC</label>
-              <input type="text" class="form-control is-valid" id="txtStudentNIC" placeholder="Enter Student NIC">
+              <label class="col-form-label" for="txt-student-nic">Student NIC</label>
+              <input type="text" class="form-control" id="txt-student-nic" placeholder="Enter Student NIC">
             </div>
             <div class="form-group">
-              <label class="col-form-label" for="txtStudentName">Student Email</label>
-              <input type="text" class="form-control is-valid" id="txtStudentEmail" placeholder="Enter Student Email">
+              <label class="col-form-label" for="txt-student-email">Student Email</label>
+              <input type="text" class="form-control" id="txt-student-email" placeholder="Enter Student Email">
             </div>
               <button type="submit" class="btn btn-success mt-1">Register Students</button>
               <button type="reset" class="btn btn-warning mt-1 ml-1">Clear</button>
