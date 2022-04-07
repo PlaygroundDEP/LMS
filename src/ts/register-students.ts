@@ -1,12 +1,10 @@
-let txtName: HTMLInputElement= document.querySelector(('#txt-student-name'))!;
-let txtNIC: HTMLInputElement = document.querySelector(('#txt-student-nic'))!;
-let txtEmail: HTMLInputElement = document.querySelector(('#txt-student-email'))!;
+let txtName: HTMLInputElement = document.querySelector('#txt-student-name')!;
+let txtNIC: HTMLInputElement = document.querySelector("#txt-student-nic")!;
+let txtEmail: HTMLInputElement  = document.querySelector("#txt-student-email")!;
 
-
-const validationListener =(evt: Event) => {
-    let inputElm = evt.target;
-    let regExp4Name=/^[A-Za-z]+$/;
-    if (inputElm instanceof HTMLInputElement){
+const validationListener = (evt: Event) => {
+    if (evt.target instanceof HTMLInputElement){
+        let inputElm = evt.target;
         let regExp: RegExp;
 
         if (inputElm === txtNIC){
@@ -25,7 +23,8 @@ const validationListener =(evt: Event) => {
             inputElm.classList.add('is-invalid');
         }
     }
-};
+}
 
 txtName.addEventListener('input', validationListener);
-
+txtNIC.addEventListener('input', validationListener);
+txtEmail.addEventListener('input', validationListener);
